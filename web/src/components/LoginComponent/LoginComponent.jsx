@@ -1,8 +1,8 @@
 import React, {useContext, useState} from 'react';
-import AppContext from "../../Context/AppContext";
-import authService from "../../Service/Auth/AuthService";
-import totpService from "../../Service/Totp/TotpService";
-import userService from "../../Service/User/UserService";
+import AppContext from "../../context/AppContext";
+import authService from "../../services/auth/authService";
+import totpService from "../../services/totp/totpService";
+import userService from "../../services/user/userService";
 import {useHistory} from "react-router-dom";
 
 import './LoginComponent.css'

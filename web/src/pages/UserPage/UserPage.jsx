@@ -1,4 +1,4 @@
-import AppContext from "../../Context/AppContext";
+import AppContext from "../../context/AppContext";
 import React, {useContext} from 'react';
 import './UserPage.css'
 

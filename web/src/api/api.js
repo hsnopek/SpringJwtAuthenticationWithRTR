@@ -1,5 +1,5 @@
 import axios from 'axios';
-import {API_URL, ERROR_CODE_ACCESS_TOKEN_INVALID} from "../Constants/Constants";
+import {API_URL, ERROR_CODE_ACCESS_TOKEN_INVALID} from "../constants/constants";
 
 const axiosInstance = axios.create({
     baseURL: API_URL,

@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {useHistory} from "react-router-dom";
-import authService from "../../Service/Auth/AuthService";
-import totpService from "../../Service/Totp/TotpService";
+import authService from "../../services/auth/authService";
+import totpService from "../../services/totp/totpService";
 import './RegistrationComponent.css'
 
 const RegistrationComponent = (props) => {

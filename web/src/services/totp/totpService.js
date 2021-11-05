@@ -1,6 +1,6 @@
-import axios from "../../Api/Api";
+import axios from "../../api/api";
 
-const TotpService = {
+const totpService = {
 
     async generateQrCodeFromUrl(url) {
         return await axios.get(`/totp/get-qr-code?url=${url}`, {responseType: 'arraybuffer'})
@@ -20,4 +20,4 @@ const TotpService = {
     }
 };
 
-export default TotpService;
+export default totpService;

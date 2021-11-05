@@ -1,6 +1,6 @@
-import axios from "../../Api/Api";
+import axios from "../../api/api";
 
-const AuthService = {
+const authService = {
 
     async login(username, password, deviceId) {
         return await axios.post("/auth/login", {
@@ -29,4 +29,4 @@ const AuthService = {
 
 };
 
-export default AuthService;
+export default authService;

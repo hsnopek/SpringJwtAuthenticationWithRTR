@@ -1,6 +1,6 @@
-import axios from "../../Api/Api";
+import axios from "../../api/api";
 
-const UserService = {
+const userService = {
 
     async findUser() {
         return await axios.get(`/user/principal`)
@@ -10,4 +10,4 @@ const UserService = {
     }
 };
 
-export default UserService;
+export default userService;

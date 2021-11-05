@@ -1,8 +1,8 @@
 import React from 'react';
 import {Route, Switch} from "react-router-dom";
-import HomePage from "../Pages/HomePage/HomePage";
-import LoginPage from "../Pages/LoginPage/LoginPage";
-import UserPage from "../Pages/UserPage/UserPage";
+import HomePage from "../pages/HomePage/HomePage";
+import LoginPage from "../pages/LoginPage/LoginPage";
+import UserPage from "../pages/UserPage/UserPage";
 import './Router.css'
 
 const Router = (props) => {

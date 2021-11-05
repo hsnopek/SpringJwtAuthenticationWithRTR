@@ -1,9 +1,9 @@
 import './App.css';
 import React, {useState} from "react";
 import {Link} from "react-router-dom";
-import authService from "./Service/Auth/AuthService";
-import AppContext from "./Context/AppContext";
-import Router from "./Router/Router";
+import authService from "./services/auth/authService";
+import AppContext from "./context/AppContext";
+import Router from "./router/Router";
 
 
 const App = () => {
