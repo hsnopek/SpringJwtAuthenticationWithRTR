@@ -1,0 +1,17 @@
+{
+  "page": {
+    "homePage": {
+      "title": "Dobrodošli {{username}}."
+    },
+    "loginPage": {
+      "ui": {
+        "username": "Korisničko ime",
+        "password": "Lozinka",
+        "email": "Email"
+      },
+      "message":{
+
+      }
+    }
+  }
+}

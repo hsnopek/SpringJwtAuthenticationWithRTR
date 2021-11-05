@@ -1,0 +1,41 @@
+.login-component {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    padding: 4px;
+}
+
+.login-component-item:nth-child(1) {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: center;
+}
+
+.login-component-item:nth-child(3) {
+    order: 1;
+    flex: 0 1 auto;
+    align-self: flex-end;
+    margin: 16px 8px 8px 0px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    padding: 4px;
+}
+
+.login-form-item {
+    margin: 4px;
+}
+
+.errorMsg {
+    color: red;
+
+}
