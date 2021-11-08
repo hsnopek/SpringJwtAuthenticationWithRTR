@@ -55,11 +55,16 @@ const RegistrationComponent = (props) => {
                             secret: response.secret,
                             qrCodeUrl: response.qrCodeUrl
                         });
+                }).then( () => {
+
+                    if (!formData.totp) {
+                        setLastStep(true);
+                    }
+                    setStep(step + 1);
+            })
+                .catch(error => {
+                    alert(error.response.data.errorMessage);
                 })
-            if (!formData.totp) {
-                setLastStep(true);
-            }
-            setStep(step + 1);
         } else if (step === 2) {
             if (registrationResponse.status === 'OK' && !lastStep) {
                 totpService.generateQrCodeFromUrl(registrationResponse.qrCodeUrl)
