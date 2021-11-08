@@ -53,11 +53,11 @@ public class UserService extends BaseService {
 	public UserDTO registerUser(RegisterUserRequest request)
 			throws UserAlreadyExistsException, WeakPasswordException, UnsupportedEncodingException, MessagingException {
 		
-		Optional<User> optionalUser = findByEmail(request.getEmail());
+		Optional<User> optionalUser = findByUsernameOrEmail(request.getUsername(), request.getEmail());
 		UserDTO newUserDTO = null;
 		
 		if(optionalUser.isPresent()) {
-			throw new UserAlreadyExistsException("Email already exists!");
+			throw new UserAlreadyExistsException("User already exists!");
 		} else {
 			
 			if(isLdapUser(request)) {
@@ -73,6 +73,10 @@ public class UserService extends BaseService {
 		}
 
 		return newUserDTO;
+	}
+
+	private Optional<User> findByUsernameOrEmail(String username, String email) {
+		return userRepository.findByUsernameOrEmail(username, email);
 	}
 
 	private boolean isLdapUser(RegisterUserRequest registerUserRequest) {
